@@ -19,7 +19,7 @@ end
 
 def select_name_and_series_subgenres_of_authors
   "SELECT authors.name, subgenres.name FROM subgenres
-  LEFT OUTER JOIN series
+  LEFT OUTER JOIN series ON subgenres.id = series.id
   GROUP BY authors.name"
 end
 
