@@ -35,6 +35,6 @@ end
 
 def select_character_names_and_number_of_books_they_are_in
   "SELECT characters.name FROM characters
-  LEFT OUTER JOIN characters ON characters.author_id = authors.id
+  LEFT OUTER JOIN character_books ON characters.author_id = authors.id
   "
 end
